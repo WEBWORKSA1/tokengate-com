@@ -1,0 +1,7 @@
+# TokenGate
+> Independent hub for token gating: tool directory, comparisons, free calculators, guides, and done-for-you token-gated experiences for brands.
+- Directory: /directory.html
+- Compare: /compare.html
+- Tools: /tools.html
+- Guides: /learn.html
+- For brands: /for-brands.html
