@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Token Gating Tools — Tool Finder, Cost & ROI Calculators, Rule Builder | TokenGate</title>
+<meta name="description" content="Free interactive token gating tools: find the right platform in 60 seconds, estimate monthly costs, model loyalty ROI, and build AND/OR gate rules with JSON export.">
+<link rel="canonical" href="https://tokengate.com/tools.html">
+<meta name="theme-color" content="#0a0b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TokenGate">
+<meta property="og:title" content="Free Token Gating Tools — Tool Finder, Cost & ROI Calculators, Rule Builder | TokenGate">
+<meta property="og:description" content="Free interactive token gating tools: find the right platform in 60 seconds, estimate monthly costs, model loyalty ROI, and build AND/OR gate rules with JSON export.">
+<meta property="og:url" content="https://tokengate.com/tools.html">
+<meta property="og:image" content="https://tokengate.com/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "TokenGate", "url": "https://tokengate.com", "logo": "https://tokengate.com/assets/img/favicon.svg"}, {"@context": "https://schema.org", "@type": "WebSite", "name": "TokenGate", "url": "https://tokengate.com", "potentialAction": {"@type": "SearchAction", "target": "https://tokengate.com/directory.html?q={q}", "query-input": "required name=q"}}]</script>
+</head>
+<body>
+<div class="domain-bar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website/domain name</a></div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="TokenGate home"><span class="logo-mark">⛩</span><span>Token<span class="grad-text">Gate</span></span></a>
+    <ul class="nav-links"><li><a href="directory.html">Directory</a></li><li><a href="compare.html">Compare</a></li><li><a href="tools.html" class="active">Tools</a></li><li><a href="learn.html">Learn</a></li><li><a href="videos.html">Videos</a></li><li><a href="contests.html">Contests</a></li><li><a href="support.html">Support</a></li></ul>
+    <div class="nav-cta">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <a class="btn btn-primary btn-sm" href="for-brands.html">Get a Gate Built</a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+<div class="ad-slot" data-slot="header"><div class="ad-inner">Advertisement</div></div>
+<main id="main">
+<!--TG-META {"title": "Free Token Gating Tools — Tool Finder, Cost & ROI Calculators, Rule Builder | TokenGate", "desc": "Free interactive token gating tools: find the right platform in 60 seconds, estimate monthly costs, model loyalty ROI, and build AND/OR gate rules with JSON export.", "priority": "0.9"}-->
+<!--TG-BODY-->
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Home</a> / Tools</div>
+    <h1>Free Token Gating Tools</h1>
+    <p class="muted" style="max-width:720px">Run the numbers before you commit. Everything runs in your browser — no wallet, no signup.</p>
+    <div class="tabs"><a class="chip" href="#finder">🎯 Tool Finder</a><a class="chip" href="#cost">🧮 Cost Calculator</a><a class="chip" href="#rules">🧩 Rule Builder</a><a class="chip" href="#roi">📈 Loyalty ROI</a><a class="chip" href="#safety">🛡️ Safety Check</a></div>
+  </div>
+</section>
+
+<section id="finder">
+  <div class="container" style="max-width:900px">
+    <div class="tool-panel">
+      <span class="eyebrow">Tool Finder</span><h2>Find your best-fit stack in 60 seconds</h2>
+      <div class="form" id="finderForm">
+        <div><label>1. What are you gating?</label><div class="chips" data-name="door"><button class="chip" data-v="community">Discord/Telegram</button><button class="chip" data-v="commerce">Store/products</button><button class="chip" data-v="events">Events</button><button class="chip" data-v="content">Content/courses</button><button class="chip" data-v="app">My own app</button></div></div>
+        <div><label>2. Which chain?</label><div class="chips" data-name="chain"><button class="chip" data-v="evm">Ethereum/L2s</button><button class="chip" data-v="solana">Solana</button><button class="chip" data-v="any">Not sure yet</button></div></div>
+        <div><label>3. Team skills?</label><div class="chips" data-name="skill"><button class="chip" data-v="nc">No-code only</button><button class="chip" data-v="dev">We have developers</button></div></div>
+        <div><label>4. Audience size?</label><div class="chips" data-name="size"><button class="chip" data-v="s">Under 500</button><button class="chip" data-v="m">500–10k</button><button class="chip" data-v="l">10k+</button></div></div>
+        <div><label>5. Also need growth quests / rewards?</label><div class="chips" data-name="quests"><button class="chip" data-v="yes">Yes</button><button class="chip" data-v="no">No</button></div></div>
+        <button class="btn btn-primary" id="finderGo">Show my stack →</button>
+      </div>
+      <div class="result-box" id="finderOut" style="display:none"></div>
+      <form class="form" id="finderLead" data-form="Tool Finder — stack report request" data-success="Sent! Your detailed stack report is on its way." style="display:none;margin-top:16px">
+        <p style="margin:0"><b>Want the full rollout plan for this stack?</b> We'll email setup steps, costs and pitfalls.</p>
+        <div class="form-row"><input name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
+        <input type="hidden" name="finder_result" id="finderResult">
+        <button class="btn btn-primary" type="submit">Email me the plan</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot" data-slot="inContent"><div class="ad-inner">Advertisement</div></div>
+
+<section id="cost" class="section-alt">
+  <div class="container" style="max-width:900px">
+    <div class="tool-panel">
+      <span class="eyebrow">Cost Calculator</span><h2>What will your gate cost per month?</h2>
+      <div class="form">
+        <div class="form-row">
+          <div><label for="cMembers">Members / holders</label><input id="cMembers" type="number" min="0" value="2500"></div>
+          <div><label for="cPreset">Platform plan</label><select id="cPreset">
+            <option value="0">Free tier ($0)</option><option value="29">Guild Starter ($29/mo)</option><option value="99" selected>Guild Pro / thirdweb Starter ($99/mo)</option><option value="399">Guild Growth ($399/mo)</option><option value="499">thirdweb Growth ($499/mo)</option><option value="custom">Custom…</option></select></div>
+        </div>
+        <div class="form-row">
+          <div><label for="cCustom">Custom plan $/mo</label><input id="cCustom" type="number" min="0" value="0"></div>
+          <div><label for="cRpc">API / RPC cost per 1k checks ($)</label><input id="cRpc" type="number" min="0" step="0.01" value="0.25"></div>
+        </div>
+        <div class="form-row">
+          <div><label for="cChecks">Re-verifications per member / month</label><input id="cChecks" type="number" min="0" value="30"></div>
+          <div><label for="cBuild">One-time build/setup ($, amortized 12 mo)</label><input id="cBuild" type="number" min="0" value="3000"></div>
+        </div>
+      </div>
+      <div class="result-box grid g3" id="costOut"></div>
+      <p class="form-note">Estimates only. Plan prices from public pages at time of writing — confirm with vendors.</p>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="container" style="max-width:1000px">
+    <div class="tool-panel">
+      <span class="eyebrow">Rule Builder</span><h2>Design your access rule</h2>
+      <p class="muted">Combine requirements with AND/OR logic, preview the plain-English rule and export JSON for your developer or platform.</p>
+      <div style="margin-bottom:10px"><label for="rLogic">Match</label><select id="rLogic" style="max-width:260px"><option value="AND">ALL requirements (AND)</option><option value="OR">ANY requirement (OR)</option></select></div>
+      <div id="ruleRows"></div>
+      <button class="btn btn-ghost btn-sm" id="addRule">+ Add requirement</button>
+      <div class="result-box"><b>Plain English:</b> <span id="ruleText"></span><pre id="ruleJson" style="margin-top:12px"></pre>
+        <button class="btn btn-ghost btn-sm" id="copyRule">Copy JSON</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="roi" class="section-alt">
+  <div class="container" style="max-width:900px">
+    <div class="tool-panel">
+      <span class="eyebrow">Loyalty ROI</span><h2>Model the revenue lift of holder perks</h2>
+      <div class="form">
+        <div class="form-row"><div><label for="rH">Holders / members</label><input id="rH" type="number" value="5000"></div><div><label for="rAov">Average order value ($)</label><input id="rAov" type="number" value="80"></div></div>
+        <div class="form-row"><div><label for="rF">Purchases per member / year</label><input id="rF" type="number" step="0.1" value="2"></div><div><label for="rU">Expected frequency uplift (%)</label><input id="rU" type="number" value="15"></div></div>
+        <div class="form-row"><div><label for="rM">Gross margin (%)</label><input id="rM" type="number" value="55"></div><div><label for="rC">Program cost / year ($)</label><input id="rC" type="number" value="20000"></div></div>
+      </div>
+      <div class="result-box grid g3" id="roiOut"></div>
+      <p class="form-note">Uplift assumptions vary widely by brand. Use conservative numbers.</p>
+    </div>
+  </div>
+</section>
+
+<section id="safety">
+  <div class="container" style="max-width:900px">
+    <div class="tool-panel">
+      <span class="eyebrow">Safety Check</span><h2>Is this “verify wallet” request safe?</h2>
+      <p class="muted">Tick what the site is asking you to do.</p>
+      <div class="form" id="safetyForm">
+        <label class="check"><input type="checkbox" data-risk="0"> Sign a plain-text message (e.g. “Sign in to …” with a nonce)</label>
+        <label class="check"><input type="checkbox" data-risk="3"> Approve a token or “setApprovalForAll”</label>
+        <label class="check"><input type="checkbox" data-risk="3"> Enter or “sync” a seed phrase / private key</label>
+        <label class="check"><input type="checkbox" data-risk="2"> Send a transaction to “verify” or pay gas to join</label>
+        <label class="check"><input type="checkbox" data-risk="2"> Link arrived via DM, not the project's official channel</label>
+        <label class="check"><input type="checkbox" data-risk="1"> Signature request is unreadable hex / typed data you don't understand</label>
+        <label class="check"><input type="checkbox" data-risk="1"> The domain differs from the official one (typos, extra words)</label>
+      </div>
+      <div class="result-box" id="safetyOut"></div>
+      <p><a href="token-gating-security.html">Read the full security checklist →</a></p>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  function v(id){return parseFloat(document.getElementById(id).value)||0}
+  function money(n){return "$"+Math.round(n).toLocaleString()}
+  /* Finder */
+  var go=document.getElementById("finderGo");
+  go.addEventListener("click",function(e){e.preventDefault();
+    var f=document.getElementById("finderForm"),get=function(n){var i=f.querySelector('input[name="'+n+'"]');return i?i.value:""};
+    var door=get("door"),chain=get("chain"),skill=get("skill"),size=get("size"),quests=get("quests");
+    if(!door){alert("Pick what you're gating first.");return}
+    var stack=[],why=[];
+    if(door==="community"){stack.push(size==="s"?"Collab.Land (free ≤25 verified)":"Guild.xyz");why.push("Purpose-built Discord/Telegram role gating with re-verification.");if(size!=="s")stack.push("Collab.Land (backup / Telegram)");}
+    if(door==="commerce"){stack.push("Shopify token-gating app");stack.push("Unlock Protocol memberships");why.push("Holder-only products and discounts on the storefront customers already use.");}
+    if(door==="events"){stack.push("Tokenproof");stack.push("POAP");why.push("Wallet-based check-in with attendance badges that unlock future perks.");}
+    if(door==="content"){stack.push(skill==="dev"?"Lit Protocol":"Unlock Protocol + WordPress plugin");why.push("Gate posts, video and downloads to paying or holding members.");}
+    if(door==="app"){stack.push(skill==="dev"?"thirdweb or Privy (auth + gating)":"Dynamic (no-code access lists)");stack.push(chain==="solana"?"Helius DAS API":"Alchemy NFT API");why.push("Server-side ownership checks you control.");}
+    if(chain==="solana"&&door!=="app")why.push("Confirm Solana support on each tool — Guild and Collab.Land both support it.");
+    if(quests==="yes"){stack.push(size==="l"?"Galxe":"Zealy");why.push("Quests drive acquisition; gate the reward, not the entry.");}
+    if(size==="l")why.push("At 10k+ members, flat-tier pricing usually beats per-member pricing — check the Cost Calculator.");
+    stack.push("Gitcoin Passport (optional anti-bot)");
+    var out=document.getElementById("finderOut");out.style.display="block";
+    out.innerHTML="<h3>Your recommended stack</h3><div class='pill-list'>"+stack.map(function(s){return "<span class='tag gold'>"+s+"</span>"}).join("")+"</div><ul>"+why.map(function(w){return "<li>"+w+"</li>"}).join("")+"</ul>";
+    document.getElementById("finderResult").value=stack.join(" | ")+" || inputs: "+[door,chain,skill,size,quests].join(", ");
+    document.getElementById("finderLead").style.display="grid";
+  });
+  /* Cost */
+  function cost(){
+    var m=v("cMembers"),p=document.getElementById("cPreset").value,plan=p==="custom"?v("cCustom"):parseFloat(p);
+    var rpc=m*v("cChecks")/1000*v("cRpc"),build=v("cBuild")/12,total=plan+rpc+build;
+    document.getElementById("costOut").innerHTML="<div><div class='muted'>Monthly</div><div class='big-num'>"+money(total)+"</div></div><div><div class='muted'>Annual</div><div class='big-num'>"+money(total*12)+"</div></div><div><div class='muted'>Per member / mo</div><div class='big-num'>$"+(m?(total/m).toFixed(3):"0")+"</div></div>";
+  }
+  ["cMembers","cPreset","cCustom","cRpc","cChecks","cBuild"].forEach(function(id){document.getElementById(id).addEventListener("input",cost)});cost();
+  /* ROI */
+  function roi(){
+    var inc=v("rH")*v("rF")*(v("rU")/100)*v("rAov"),gp=inc*v("rM")/100,c=v("rC"),r=c?((gp-c)/c*100):0;
+    document.getElementById("roiOut").innerHTML="<div><div class='muted'>Incremental revenue / yr</div><div class='big-num'>"+money(inc)+"</div></div><div><div class='muted'>Incremental gross profit</div><div class='big-num'>"+money(gp)+"</div></div><div><div class='muted'>ROI</div><div class='big-num' style='color:"+(r>=0?"var(--ok)":"var(--bad)")+"'>"+Math.round(r)+"%</div></div>";
+  }
+  ["rH","rAov","rF","rU","rM","rC"].forEach(function(id){document.getElementById(id).addEventListener("input",roi)});roi();
+  /* Rules */
+  var rows=document.getElementById("ruleRows");
+  function row(d){d=d||{};var el=document.createElement("div");el.className="rule-row";
+    el.innerHTML='<select class="rt"><option value="ERC721">Hold NFT (ERC-721)</option><option value="ERC1155">Hold NFT (ERC-1155)</option><option value="ERC20">Hold token (ERC-20)</option><option value="SPL">Hold Solana token</option><option value="POAP">Own POAP</option><option value="PASSPORT">Passport score</option><option value="ALLOWLIST">On allowlist</option></select>'+
+    '<select class="rc"><option>ethereum</option><option>base</option><option>polygon</option><option>arbitrum</option><option>optimism</option><option>solana</option></select>'+
+    '<input class="ra" placeholder="Contract / mint / list id" value="'+(d.a||"")+'"><input class="rn" type="number" min="0" value="'+(d.n||1)+'" title="Minimum"><button class="icon-btn rx" aria-label="Remove">×</button>';
+    rows.appendChild(el);if(d.t)el.querySelector(".rt").value=d.t;upd()}
+  function upd(){var logic=document.getElementById("rLogic").value,reqs=[].slice.call(rows.children).map(function(r){return{type:r.querySelector(".rt").value,chain:r.querySelector(".rc").value,address:r.querySelector(".ra").value||"<address>",min:parseFloat(r.querySelector(".rn").value)||0}});
+    document.getElementById("ruleText").textContent=reqs.length?"Grant access if the wallet meets "+(logic==="AND"?"ALL":"ANY")+" of: "+reqs.map(function(r){return (r.type==="PASSPORT"?"Passport score ≥ "+r.min:r.type==="ALLOWLIST"?"is on allowlist "+r.address:"holds ≥ "+r.min+" "+r.type+" at "+r.address)+" ("+r.chain+")"}).join("; ")+".":"Add a requirement.";
+    document.getElementById("ruleJson").textContent=JSON.stringify({logic:logic,requirements:reqs,recheck:"every 24h"},null,2)}
+  rows.addEventListener("input",upd);rows.addEventListener("click",function(e){if(e.target.classList.contains("rx")){e.target.parentNode.remove();upd()}});
+  document.getElementById("rLogic").addEventListener("input",upd);
+  document.getElementById("addRule").addEventListener("click",function(){row()});
+  document.getElementById("copyRule").addEventListener("click",function(){try{navigator.clipboard.writeText(document.getElementById("ruleJson").textContent);this.textContent="Copied ✓"}catch(e){}});
+  row({t:"ERC721",n:1});row({t:"PASSPORT",n:20,a:"gitcoin"});
+  /* Safety */
+  var sf=document.getElementById("safetyForm");
+  function safe(){var s=0,any=false;sf.querySelectorAll("input").forEach(function(c){if(c.checked){any=true;s=Math.max(s,parseInt(c.getAttribute("data-risk")))}});
+    var o=document.getElementById("safetyOut");
+    o.innerHTML=!any?"Select what you're being asked to do.":s===0?"<b style='color:var(--ok)'>✅ Low risk.</b> A readable sign-in message is how legitimate gates work. Still verify the domain.":s===1?"<b style='color:var(--accent)'>⚠️ Caution.</b> Double-check the URL and only sign what you can read.":"<b style='color:var(--bad)'>⛔ High risk — stop.</b> Legitimate token gates never need approvals, seed phrases or payments to verify ownership."}
+  sf.addEventListener("change",safe);safe();
+});
+</script>
+<!--/TG-BODY-->
+</main>
+<div class="ad-slot" data-slot="footer"><div class="ad-inner">Advertisement</div></div>
+<div id="tg-chrome"></div>
+<script src="assets/js/config.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
