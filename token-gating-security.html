@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Token Gating Security Checklist — For Holders & Builders | TokenGate</title>
+<meta name="description" content="Stay safe with token gating: signatures vs approvals, phishing red flags, revoking permissions, and security best practices for builders running gates.">
+<link rel="canonical" href="https://tokengate.com/token-gating-security.html">
+<meta name="theme-color" content="#0a0b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TokenGate">
+<meta property="og:title" content="Token Gating Security Checklist — For Holders & Builders | TokenGate">
+<meta property="og:description" content="Stay safe with token gating: signatures vs approvals, phishing red flags, revoking permissions, and security best practices for builders running gates.">
+<meta property="og:url" content="https://tokengate.com/token-gating-security.html">
+<meta property="og:image" content="https://tokengate.com/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "TokenGate", "url": "https://tokengate.com", "logo": "https://tokengate.com/assets/img/favicon.svg"}, {"@context": "https://schema.org", "@type": "WebSite", "name": "TokenGate", "url": "https://tokengate.com", "potentialAction": {"@type": "SearchAction", "target": "https://tokengate.com/directory.html?q={q}", "query-input": "required name=q"}}, {"@context": "https://schema.org", "@type": "Article", "headline": "Token Gating Security Checklist — For Holders & Builders | TokenGate", "description": "Stay safe with token gating: signatures vs approvals, phishing red flags, revoking permissions, and security best practices for builders running gates.", "mainEntityOfPage": "https://tokengate.com/token-gating-security.html", "author": {"@type": "Organization", "name": "TokenGate Editorial"}, "dateModified": "2026-09-21"}]</script>
+</head>
+<body>
+<div class="domain-bar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website/domain name</a></div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="TokenGate home"><span class="logo-mark">⛩</span><span>Token<span class="grad-text">Gate</span></span></a>
+    <ul class="nav-links"><li><a href="directory.html">Directory</a></li><li><a href="compare.html">Compare</a></li><li><a href="tools.html">Tools</a></li><li><a href="learn.html" class="active">Learn</a></li><li><a href="videos.html">Videos</a></li><li><a href="contests.html">Contests</a></li><li><a href="support.html">Support</a></li></ul>
+    <div class="nav-cta">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <a class="btn btn-primary btn-sm" href="for-brands.html">Get a Gate Built</a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+<div class="ad-slot" data-slot="header"><div class="ad-inner">Advertisement</div></div>
+<main id="main">
+<!--TG-META {"title": "Token Gating Security Checklist — For Holders & Builders | TokenGate", "desc": "Stay safe with token gating: signatures vs approvals, phishing red flags, revoking permissions, and security best practices for builders running gates.", "article": true, "nav": "learn.html", "priority": "0.8"}-->
+<!--TG-BODY-->
+
+<section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / <a href="learn.html">Learn</a> / Security</div><h1>Token Gating Security Checklist</h1><p class="muted">6 min read · For holders and builders</p></div></section>
+<div class="container article">
+<article class="article-body">
+<div class="callout"><b>Golden rule:</b> verifying ownership never requires approving spending, sending funds, or sharing a seed phrase. A readable signature is enough.</div>
+<h2 id="holders">For holders</h2>
+<ul>
+<li>✅ Only sign plain-text sign-in messages that name the site you're on.</li>
+<li>⛔ Reject <code>approve</code>, <code>setApprovalForAll</code>, <code>permit</code> or any transaction during “verification”.</li>
+<li>⛔ Never type your seed phrase anywhere — no support team needs it.</li>
+<li>✅ Reach bots from the project's official channel, not DMs.</li>
+<li>✅ Use a separate “vault” wallet for valuable NFTs and a “hot” wallet for daily use; many gates support delegation.</li>
+<li>✅ Periodically review and revoke old approvals with a reputable approval checker.</li>
+</ul>
+<p>Unsure about a request? Try our <a href="tools.html#safety">Safety Check</a>.</p>
+<h2 id="builders">For builders</h2>
+<ul>
+<li>Use SIWE (EIP-4361) with nonces and expiry to prevent replay.</li>
+<li>Verify ownership server-side; never trust the client.</li>
+<li>Re-verify on a schedule and on transfer events (webhooks).</li>
+<li>Support delegation so users don't expose vault wallets.</li>
+<li>Rate-limit verification endpoints; add humanity checks for rewards.</li>
+<li>Publish your official domains and bots; tell users what you will never ask.</li>
+</ul>
+<div class="ad-slot" data-slot="inContent" style="padding:0"><div class="ad-inner">Advertisement</div></div>
+<h2 id="incident">If something goes wrong</h2>
+<ol><li>Disconnect the site and revoke approvals immediately.</li><li>Move remaining assets to a fresh wallet.</li><li>Warn your community through official channels.</li><li>Document transaction hashes for exchanges and investigators.</li></ol>
+</article>
+<!--TG-SIDEBAR--><aside class="aside-stack">
+  <div class="toc"><b>On this page</b><a href="#holders">For holders</a><a href="#builders">For builders</a><a href="#incident">If something goes wrong</a></div>
+  <div class="card" style="border-color:var(--brand)">
+    <h3>Free gate blueprint</h3><p>Tool stack, rules, timeline & budget — in 48 hours.</p>
+    <form class="form" style="margin-top:12px" data-form="Guide sidebar lead" data-success="Done! Blueprint coming within 48 hours.">
+      <input type="email" name="email" placeholder="Work email" required>
+      <input type="hidden" name="source_guide" value="Token Gating Security Checklist — For Holders & Builders">
+      <button class="btn btn-primary btn-block" type="submit">Get it free</button>
+    </form>
+  </div>
+  <div class="ad-slot" data-slot="sidebar" style="padding:0;margin:0"><div class="ad-inner" style="min-height:250px">Advertisement</div></div>
+  <div class="card"><h3>Support TokenGate</h3><p>Keep these guides free.</p><a class="btn btn-ghost btn-sm" style="margin-top:10px" href="support.html">Donate →</a></div>
+</aside><!--/TG-SIDEBAR-->
+</div>
+<!--/TG-BODY-->
+</main>
+<div class="ad-slot" data-slot="footer"><div class="ad-inner">Advertisement</div></div>
+<div id="tg-chrome"></div>
+<script src="assets/js/config.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
